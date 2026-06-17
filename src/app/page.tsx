@@ -2,6 +2,14 @@
 
 import { useEffect } from "react";
 import gsap from "gsap";
+
+const aboutHighlights = [
+  "Master's Degree in Biomedical Engineering",
+  "Nursing Student",
+  "Medical Device Connectivity (Stryker & QIAGEN)",
+  "Machine Learning & Medical AI",
+];
+
 export default function Home() {
   useEffect(() => {
   gsap.from(".hero-title", {
@@ -24,6 +32,15 @@ export default function Home() {
     y: 40,
     duration: 1.5,
     delay: 0.6,
+    ease: "power3.out",
+  });
+
+  gsap.from(".fade-section", {
+    opacity: 0,
+    y: 48,
+    duration: 1.2,
+    delay: 0.8,
+    stagger: 0.12,
     ease: "power3.out",
   });
 }, []);
@@ -82,6 +99,81 @@ export default function Home() {
 </a>
 
         </div>
+<section
+  id="about"
+  className="fade-section scroll-mt-32 mt-28 max-w-6xl mx-auto px-6 text-left"
+>
+  <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+    <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-cyan-500/20 via-violet-500/15 to-emerald-500/20 p-6 backdrop-blur-sm sm:p-8">
+      <div className="absolute -left-16 -top-16 h-44 w-44 rounded-full bg-cyan-400/20 blur-3xl" />
+      <div className="absolute -bottom-20 -right-16 h-52 w-52 rounded-full bg-violet-400/20 blur-3xl" />
+      <div className="relative flex aspect-[4/5] min-h-[300px] items-center justify-center rounded-2xl border border-white/10 bg-black/35 p-8 sm:min-h-[360px]">
+        <div className="absolute inset-8 rounded-full border border-cyan-300/20" />
+        <div className="absolute inset-14 rounded-full border border-violet-300/20" />
+        <div className="relative text-center">
+          <div className="mx-auto mb-8 flex h-28 w-28 items-center justify-center rounded-full border border-cyan-300/30 bg-cyan-400/10 shadow-[0_0_80px_rgba(34,211,238,0.22)]">
+            <span className="text-5xl font-bold text-cyan-200">AI</span>
+          </div>
+          <p className="uppercase tracking-[0.28em] text-xs text-cyan-200">
+            Medical Intelligence
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-gray-300">
+            Biomedical engineering, clinical education and machine learning
+            connected for practical healthcare innovation.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p className="hero-subtitle uppercase tracking-[0.3em] text-sm text-cyan-400 mb-6">
+        About Me
+      </p>
+
+      <h2 className="text-5xl md:text-6xl font-bold mb-8">
+        Bridging Healthcare and AI
+      </h2>
+
+      <div className="space-y-5 text-lg leading-relaxed text-gray-300">
+        <p>
+          I hold a Master&apos;s degree in Biomedical Engineering and I am
+          currently pursuing a Bachelor&apos;s degree in Nursing. My
+          interdisciplinary background combines engineering, medicine, and
+          artificial intelligence to develop innovative healthcare solutions.
+        </p>
+
+        <p>
+          I have professional experience working with Stryker and QIAGEN,
+          specializing in medical device connectivity, software integration,
+          and healthcare IT solutions.
+        </p>
+
+        <p>
+          My current focus is Machine Learning, Computer Vision, and Medical
+          AI. I develop AI applications for medical image analysis, diagnostic
+          support, and intelligent healthcare systems.
+        </p>
+
+        <p>
+          I am passionate about translating cutting-edge AI research into
+          practical clinical solutions that improve patient outcomes and
+          support healthcare professionals.
+        </p>
+      </div>
+
+      <div className="mt-8 grid gap-4 sm:grid-cols-2">
+        {aboutHighlights.map((highlight) => (
+          <div
+            key={highlight}
+            className="rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 text-sm font-semibold text-gray-100 backdrop-blur-sm transition duration-300 hover:scale-[1.02] hover:border-cyan-300/30 hover:bg-cyan-300/10"
+          >
+            {highlight}
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 <section
   id="projects"
   className="scroll-mt-32 mt-20 max-w-6xl mx-auto px-6"
