@@ -279,44 +279,51 @@ export default function Home() {
 </section>
 <section
   id="contact"
-  className="scroll-mt-32 mt-32 max-w-4xl mx-auto px-6 pb-32 text-center"
+  className="scroll-mt-32 mt-32 max-w-5xl mx-auto px-6 pb-32 text-center"
 >
-  <p className="hero-subtitle uppercase tracking-[0.3em] text-sm text-cyan-400 mb-6">
-    Contact
-  </p>
+  <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-violet-500/20 via-cyan-500/10 to-emerald-500/20 p-8 backdrop-blur-sm transition duration-300 hover:scale-[1.01] sm:p-10 md:p-12">
+    <div className="absolute -right-20 -top-20 h-60 w-60 rounded-full bg-violet-500/20 blur-3xl" />
+    <div className="absolute -bottom-24 -left-20 h-64 w-64 rounded-full bg-cyan-500/20 blur-3xl" />
 
-  <h2 className="text-5xl md:text-6xl font-bold mb-8">
-    Let&apos;s Work Together
-  </h2>
+    <div className="relative">
+      <p className="hero-subtitle uppercase tracking-[0.3em] text-sm text-cyan-400 mb-6">
+        Contact
+      </p>
 
-  <p className="text-gray-400 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
-    Interested in medical AI, neurotechnology, machine learning systems
-    or futuristic digital health projects? Let&apos;s connect.
-  </p>
+      <h2 className="text-5xl md:text-6xl font-bold mb-8">
+        Let&apos;s Work Together
+      </h2>
 
-  <div className="flex flex-wrap gap-4 justify-center">
-    <a
-  href="tel:+48796041297"
-  className="px-8 py-4 border border-gray-700 rounded-2xl hover:bg-white hover:text-black transition duration-300"
->
-  Call Me
-</a>
+      <p className="text-gray-400 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+        Interested in medical AI, neurotechnology, machine learning systems
+        or futuristic digital health projects? Let&apos;s connect.
+      </p>
 
-    <a
-      href="mailto:julia.mus1611@gmail.com"
+      <div className="flex flex-wrap gap-4 justify-center">
+        <a
+      href="tel:+48796041297"
       className="px-8 py-4 border border-gray-700 rounded-2xl hover:bg-white hover:text-black transition duration-300"
     >
-      Email Me
+      Call Me
     </a>
 
-    <a
-      href="https://huggingface.co/barabarafigofago"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="px-8 py-4 border border-gray-700 rounded-2xl hover:bg-white hover:text-black transition duration-300"
-    >
-      Hugging Face
-    </a>
+        <a
+          href="mailto:julia.mus1611@gmail.com"
+          className="px-8 py-4 border border-gray-700 rounded-2xl hover:bg-white hover:text-black transition duration-300"
+        >
+          Email Me
+        </a>
+
+        <a
+          href="https://huggingface.co/barabarafigofago"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 py-4 border border-gray-700 rounded-2xl hover:bg-white hover:text-black transition duration-300"
+        >
+          Hugging Face
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
