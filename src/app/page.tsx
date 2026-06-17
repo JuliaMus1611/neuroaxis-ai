@@ -230,6 +230,54 @@ export default function Home() {
 </div>
 </section>
 <section
+  id="about"
+  className="scroll-mt-32 mt-32 max-w-5xl mx-auto px-6 text-center"
+>
+  <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-cyan-500/20 via-violet-500/10 to-emerald-500/20 p-8 backdrop-blur-sm transition duration-300 hover:scale-[1.01] sm:p-10 md:p-12">
+    <div className="absolute -left-20 -top-20 h-60 w-60 rounded-full bg-cyan-500/20 blur-3xl" />
+    <div className="absolute -bottom-24 -right-20 h-64 w-64 rounded-full bg-violet-500/20 blur-3xl" />
+
+    <div className="relative">
+      <p className="hero-subtitle uppercase tracking-[0.3em] text-sm text-cyan-400 mb-6">
+        About Me
+      </p>
+
+      <h2 className="text-5xl md:text-6xl font-bold mb-10">
+        About Me
+      </h2>
+
+      <div className="mx-auto max-w-3xl space-y-6 text-left text-lg leading-relaxed text-gray-300">
+        <p>
+          I hold a Master&apos;s degree in Biomedical Engineering and I am
+          currently pursuing a Bachelor&apos;s degree in Nursing, combining
+          engineering expertise with clinical knowledge.
+        </p>
+
+        <p>
+          My professional experience includes working with{" "}
+          <strong className="text-white">Stryker</strong> and{" "}
+          <strong className="text-white">QIAGEN</strong>, where I specialized
+          in medical device connectivity, software integration, and healthcare
+          IT solutions.
+        </p>
+
+        <p>
+          I am passionate about Machine Learning, Computer Vision, and Medical
+          AI. My goal is to develop intelligent healthcare technologies that
+          improve diagnostics, optimize clinical workflows, and enhance patient
+          care.
+        </p>
+
+        <p>
+          I enjoy turning complex medical challenges into practical AI
+          solutions by combining data science, engineering, and healthcare
+          expertise.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section
   id="contact"
   className="scroll-mt-32 mt-32 max-w-4xl mx-auto px-6 pb-32 text-center"
 >
